@@ -1,0 +1,51 @@
+.hero{
+  padding: 6.25em 2em;
+  text-align: center;
+  &-text{
+    max-width: 62.5em;
+    margin: 0 auto;
+    &__title{
+      line-height: 1.5em;
+      font-size: 1.45em;
+    }
+    &__description{
+      margin: 1.5em 0 2.5em;
+      font-size: .86em;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .hero-text{
+    &__title{
+      font-size: 2em;
+    }
+    &__description{
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+@media (min-width: 1000px) {
+  .hero-text{
+    &__title{
+      font-size: 2.7em;
+    }
+    &__description{
+      width: 70%;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .hero-text{
+    &__description{
+      width: 42%;
+    }
+  }
+}
+
+@media (min-width: 1440px){
+  .hero{
+    padding-bottom: 4em;
+  }
+}

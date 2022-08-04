@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Huddle landing page with curved sections</title>
+  </head>
+  <body>
+    <header class="header">
+      <img src="./images/logo.svg" alt="logo" class="header__logo">
+      <button class="btn btn-outline">Try it free</button>
+    </header>
+    
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1 class="hero-text__title">Build The Community Your Fans Will Love</h1>
+        <p class="hero-text__description">
+          Huddle re-imagines the way we build communities. You have a voice, but so does 
+          your audience. Create connections with your users as you engage in genuine discussion. 
+        </p>
+        <button class="btn btn-fill">Get Started For Free</button>
+      </div>
+    </section>
+
+    <!-- Statastics -->
+    <section class="statistics">
+      <img src="./images/screen-mockups.svg" alt="screen mockups" class="statistics__image">
+      <div class="statistics-info">
+        <div class="statistics-info__card">
+          <img src="./images/icon-communities.svg" alt="icon communities" class="statistics-info__icon">
+          <p class="statistics-info__total statistics-info__total--big" translate="no">1.4k+</p>
+          <p class="statistics-info__text">Communities Formed</p>
+        </div>
+        <div class="statistics-info__card">
+          <img src="./images/icon-messages.svg" alt="icon messages" class="statistics-info__icon">
+          <p class="statistics-info__total" translate="no">2.7m+</p>
+          <p class="statistics-info__text">Messages Sent</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards info -->
+    <section class="cards">
+      <!-- #1 -->
+      <article class="card-info card-wave card-wave--first">
+        <div class="card-info__wrapper">
+          <img 
+            src="./images/illustration-grow-together.svg" 
+            alt="illustration grow together"
+            class="card-info__img"
+          >
+          <div class="card-text">
+            <h2 class="card-text__title">Grow Together</h2>
+            <p class="card-text__description">
+              Generate meaningful discussions with your audience and build a strong, loyal community. 
+              Think of the insightful conversations you miss out on with a feedback form.
+            </p>  
+          </div>
+        </div>
+      </article>
+
+      <!-- #2 -->
+      <article class="card-info">
+        <div class="card-info__wrapper">
+          <img 
+            src="./images/illustration-flowing-conversation.svg" 
+            alt="illustration flowing conversation"
+            class="card-info__img"
+          >
+          <div class="card-text">
+            <h2 class="card-text__title">Flowing Conversations</h2>
+            <p class="card-text__description">
+              You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
+              just-in-time loading for a more natural flow.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- #3 -->
+      <article class="card-info card-wave card-wave--second">
+        <div class="card-info__wrapper">
+          <img 
+            src="./images/illustration-your-users.svg" 
+            alt="illustration your users"
+            class="card-info__img"
+          >
+          <div class="card-text">
+            <h2 class="card-text__title">Your Users</h2>
+            <p class="card-text__description">
+              It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
+              once signed in to your app, your users can start chatting immediately.
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Banner -->
+    <section class="banner">
+      <h2 class="banner__title">Ready To Build Your Community?</h2>
+      <button class="btn btn-fill">Get Started For Free</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__wrapper">
+
+        <!-- News -->
+        <div class="footer-news">
+          <p class="footer-news__title">Newsletter</p>
+          <p class="footer-news__description">
+            To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
+            send you spam or pass on your email address
+          </p>
+          <form class="footer-news__form">
+            <input type="text" class="footer-news__input">
+            <button class="btn btn-fill btn-fill--sr">Subscribe</button>
+          </form>
+        </div>
+
+        <!-- info -->
+        <div class="footer-info">
+          <img src="./images/logo.svg" alt="logo" class="footer-info__logo">
+          <p class="footer-info__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
+            vestibulum a, ultrices quis sem.
+          </p>
+
+          <!-- Contact -->
+          <div class="contact">
+            <p class="contact__item">
+              <img src="./images/icon-phone.svg" alt="icon phone">
+              Phone: +1-543-123-4567
+            </p>
+            <p class="contact__item">
+              <img src="./images/icon-email.svg" alt="icon email">
+              example@huddle.com
+            </p>
+          </div>
+          <!-- Networks -->
+          <div class="networks">
+            <a href="#">
+              <img src="./images/logo-facebook.svg" alt="logo facebook" class="networks__icon">
+            </a>
+            <a href="#">
+              <img src="./images/logo-instagram.svg" alt="logo instagram" class="networks__icon">
+            </a>
+            <a href="#">
+              <img src="./images/logo-twitter.svg" alt="logo twitter" class="networks__icon">
+            </a>
+          </div>
+        </div>
+        
+      </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
+

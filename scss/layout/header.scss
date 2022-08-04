@@ -1,0 +1,32 @@
+.header{
+  max-width: 81.25em;
+  margin: 0 auto;
+  padding: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__logo{
+    width: 6.25em;
+  }
+}
+
+@media (min-width: 768px) {
+  .header{
+    padding: 1.5em 2em;
+    &__logo{
+      width: 9em;
+    }
+    .btn{
+      font-size: .88em;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .header{
+    padding: 2em 0;
+    &__logo{
+      width: 11em;
+    }
+  }
+}

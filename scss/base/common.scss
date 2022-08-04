@@ -1,0 +1,29 @@
+@use '../vars/colors.scss' as color;
+@use '../vars/fonts.scss' as font;
+
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+body{
+  font-family: font.$ff-2;
+  color: color.$very-dark-cyan;
+  // background-color: rgb(18, 79, 194);
+}
+img{
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+picture{
+  display: block;
+}
+h1,h2,
+h3{
+  margin: 0;
+  font-family: font.$ff-1;
+}
+p{
+  line-height: 1.45em;
+}

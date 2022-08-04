@@ -1,0 +1,120 @@
+@use '../vars/colors.scss' as color;
+
+.cards{
+  display: flex;
+  flex-direction: column;
+  row-gap: 8em;
+}
+.card-info{
+  padding: 3em 2em;
+  &__wrapper{
+    max-width: 73.75em;
+    margin: 0 auto;
+  }
+}
+.card-text{
+  margin-top: 3em;
+  text-align: center;
+  &__description{
+    margin: 1.5em 0 0;
+    font-size: .84em;
+  }
+}
+
+.card-wave{
+  background-color: color.$very-pale-blue;
+  position: relative;
+  &--first{
+    &::before,
+    &::after{
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+    }
+    &::before{
+      bottom: 100%;
+      background: url('../../images/bg-section-top-mobile-1.svg') no-repeat left bottom;
+      background-size: contain;
+    }
+    &::after{
+      top: 100%;
+      background: url('../../images/bg-section-bottom-mobile-1.svg') no-repeat left top;
+      background-size: contain;
+    }
+  }
+  &--second{
+    &::before,
+    &::after{
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+    }
+    &::before{
+      bottom: 100%;
+      background: url('../../images/bg-section-top-mobile-2.svg') no-repeat left bottom;
+      background-size: contain;
+    }
+    &::after{
+      top: 100%;
+      background: url('../../images/bg-section-bottom-mobile-2.svg') no-repeat left top;
+      background-size: contain;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .card-info{
+    &__wrapper{
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      column-gap: 2em;
+    }
+    &__img{
+      width: 50%;
+    }
+  }
+  .card-text{
+    text-align: left;
+  }
+  .card-wave{
+    &--first{
+      &::before{
+        background-image: url('../../images/bg-section-top-desktop-1.svg');
+      }
+      &::after{
+        background-image: url('../../images/bg-section-bottom-desktop-1.svg');
+      }
+    }
+    &--second{
+      &::before{
+        background-image: url('../../images/bg-section-top-desktop-2.svg');
+      }
+      &::after{
+        background-image: url('../../images/bg-section-bottom-desktop-2.svg');
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-info{
+    &__wrapper{
+      column-gap: 10em;
+    }
+    &__img{
+      width: 45%;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .cards{
+    row-gap: 10em;
+  }
+}

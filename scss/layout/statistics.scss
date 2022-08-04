@@ -1,0 +1,45 @@
+.statistics{
+  max-width: 62.5em;
+  margin: 0 auto;
+  padding: 0 2em;
+  &-info{
+    display: flex;
+    margin: 7.5em 0;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 6.25em;
+    &__card{
+      width: max-content;
+      margin: 0 auto;
+      text-align: center;
+    }
+    &__icon{
+      width: 2em;
+    }
+    &__total{
+      margin: 0;
+      font-weight: 600;
+      font-size: 3.68em;
+      &--big{
+      font-weight: 700;
+        font-size: 4.1em;
+      }
+    }
+    &__text{
+      margin: 0;
+      opacity: .6;
+    }
+  }
+}
+
+// Breakpoints
+@media (min-width: 768px) {
+  .statistics{
+    margin-bottom: 6em;
+    &-info{
+      margin-top: 4em;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
